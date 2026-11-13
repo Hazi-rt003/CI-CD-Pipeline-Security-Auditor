@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg
+pyyaml
+python-multipart
+pytest

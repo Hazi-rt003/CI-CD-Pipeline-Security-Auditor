@@ -1,0 +1,17 @@
+name: Insecure Workflow
+
+on:
+  pull_request_target:
+
+permissions: write-all
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run build
+        run: echo "Testing workflow"
